@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>ThuneEureka-Machinery park Testing & Control</title>
+    <link href="Hoja_de_estilo.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script>
+        window.addEventListener("load", function() { /* Agregamos un evento de carga a la ventana */
+            document.body.style.opacity = "1"; /* Establecemos la opacidad en 1 para hacer visible el cuerpo */
+        });
+    </script>
+ <style>
+    .boton button {
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transiciones suaves al transform y box-shadow */
+    }
+
+    .boton button:active {
+        transform: scale(0.95); /* Reduce el tamaño del botón al presionarlo */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra al botón al presionarlo */
+    }
+</style>
+    <script src="audio-button.js"></script>
+    <script src="aumento.js"></script>
+</head>
+<body style="background-color: rgb(0, 0, 85);">
+    <div style="float:left">
+    <h1>ThuneEureka</h1>
+    </div>
+    <div style="float:right;">
+        <h1>Choose a section</h1>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="boton" style="text-align:center;" id="myButton">
+        <button onmouseover="reproducirSonido()" class="animate__animated animate__zoomIn" onclick="reproducirSonidoAndRedirect('Interior-laoyut-of-the-facility/Interior-laoyut-of-the-facility.html')">Interior laoyut of the facility</button>
+
+        <button onmouseover="reproducirSonido()" class="animate__animated animate__zoomIn" onclick="reproducirSonidoAndRedirect('Manufacturing-engineering/Manufacturing-engineering.html')">Manufacturing engineering</button>
+
+        <button onmouseover="reproducirSonido()" class="animate__animated animate__zoomIn" onclick="reproducirSonidoAndRedirect('Manufacturing/Manufacturing.html')">Manufacturing</button>
+
+        <button onmouseover="reproducirSonido()" class="animate__animated animate__zoomIn" onclick="reproducirSonidoAndRedirect('Testing-&-control/Testing-&-Control.html')">Testing & Control</button>
+
+        <button onmouseover="reproducirSonido()" class="animate__animated animate__zoomIn" onclick="reproducirSonidoAndRedirect('Testing-Storage-Certifications/Testing-Storage-Certifications.html')">Testing / Storage / Certifications</button>
+
+        <button onmouseover="reproducirSonido()" class="animate__animated animate__zoomIn" onclick="reproducirSonidoAndRedirect('About/About.html')">About</button>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="boton2" style="text-align: right;">
+        <button class="animate__animated animate__zoomIn" onclick="window.location.href='index.html'">Exit</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'MaisGrotesKS';
+  src: url('fonts/MaisGrotesKS.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MaisGrotesKSLight';
+  src: url('fonts/MaisGroteskSLight.ttf') format('truetype');
+}
+
+body {background-size:cover;
+  opacity: 0; /* Establecemos la opacidad en cero para que el cuerpo sea invisible al principio */
+  transition: opacity 1s ease; /* Agregamos una transición de opacidad para un efecto de desvanecimiento */}
+.sect {
+  width: 100%;
+  min-height: 500px;
+}
+
+#sect1,
+#sect3 {
+  width: 100%;
+  min-height: 100%;
+  opacity: 100;
+  background-color: #0000007d;
+  color: #fff;
+}
+#sect2 {
+  width: 100%;
+  min-height: 100px;
+  background-color: #0000007d;
+  color: #ffffff;
+  border-radius: 15px;
+  opacity: 100;
+  padding-left: 6%;
+  padding-right: 0%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:120%;
+  z-index: -1;
+} 
+iframe {box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 0.4)}
+a {font-family: MaisGrotesKS; font-size: 10px; color: bisque;}
+h1 {color: rgb(255, 255, 255); font-size: 45px; font-family: MaisGrotesKS; text-shadow:3px 3px 10px rgb(1, 1, 170);}
+.machine1 {color: navy; font-size: 45px; font-family: MaisGrotesKS; text-shadow:3px 3px 5px #8d8d8d;}
+h2 {color: black; font-family: MaisGrotesKS; font-size: 40px; text-shadow: 3px 3px 2px rgba(152, 150, 207, 0.7);}
+  .h21 {color: black; font-family: MaisGrotesKS; font-size: 40px; text-shadow: 3px 3px 2px rgb(0, 0, 53);}
+h3 {color: rgb(255, 255, 255); font-family: MaisGrotesKSLight; font-size: 25px; text-shadow: 3px 3px 2px rgba(5, 1, 119, 0.7);}
+.machine3 {color: navy; text-shadow:3px 3px 5px #8d8d8d; font-family: MaisGrotesKS;}
+h4 { color: rgb(255, 255, 255); font-family: MaisGrotesKS; font-size: 20px; text-shadow: 3px 3px 2px rgba(5, 1, 119, 0.7);}
+.machine4 {list-style-type: disc; text-align: left; color: rgb(0, 0, 31); text-shadow:3px 3px 5px #8d8d8d;}
+
+.features {color: rgb(0, 0, 145); text-shadow:3px 3px 5px #8d8d8d; font-size: 22px;}
+text {color: black; background-color: rgb(216, 216, 216);}
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown :hover {
+    color: #ff0000;
+    transition:all .5s ease-in-out;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 0.4);
+    border-radius: 15px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block; 
+  }
+  .dropdown-content a {
+    display: block;
+    color: #4d0000;
+    padding: 10px;
+    text-decoration: none;
+    background-color: grey;
+    transition:all .5s ease-in-out; 
+  }
+  .dropdown-content a:hover {
+    color: #cfcfcf;
+    background-color: #610000;
+    transition:all .5s ease-in-out;
+  }
+  .text_marg {margin-left: 200px; margin-right: 200px;}
+  .text_marg2 {margin-left: 780px; margin-right: 780px;}
+table {border: 1px; border-radius: 15px; margin-left: 200px; margin-right: 200px;}
+ .b {border: 0px solid rgb(0, 0, 0); border-radius: 15px; background-color: #3333337d; color: #fff; box-shadow: 0px 10px 10px 0px rgb(255, 0, 0);}
+ 
+button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-size-adjust: 14;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px; 
+  background-color: navy;
+  size: cover;
+  
+  box-shadow:1px 5px 5px rgb(0, 0, 53);
+  font-family: MaisGrotesKS;
+}
+
+button::before {
+  content: url(menuselect.wav);
+  display: none;
+}
+
+button:hover::before {
+  display: inline;
+}
+
+.boton :hover {
+  color: rgb(1, 1, 170);
+  background-color: rgb(99, 114, 250);
+  transition:all .5s ease-in-out;
+  box-shadow:0px 0px 0px rgb(0, 0, 53);
+}
+.boton2 :hover {
+  color: #ffffff;
+  background-color: rgb(170, 0, 0);
+  transition:all .5s ease-in-out;
+  box-shadow:0px 0px 0px rgb(0, 0, 53);
+}
+.boton3 :hover {
+  color: #ffffff;
+  background-color: rgb(170, 0, 0);
+  transition:all .5s ease-in-out;
+  box-shadow:0px 0px 0px rgb(0, 0, 53);
+}
+img {box-shadow: 0px 10px 10px 0px #8d8d8d;}
+  .a {box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);}
+  .tu-imagen {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tu-imagen:hover {
+      z-index: 999;
+      transform: scale(2.4);
+  }
+  
+  .enfocada {
+      z-index: 999;
+      transform: scale(1.2);
+  }
+  .yo-imagen {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .yo-imagen:hover {
+    opacity: 1;
+  }
+  
